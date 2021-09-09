@@ -1,0 +1,61 @@
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 20px ;
+    padding-bottom: 80px;
+
+&-heading {
+    font-weight:600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+&-desc {
+    margin: 20px 0 30px;
+    max-width: 245px;
+}
+
+&-link {
+    color: $gray-dark;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+&-link-item {
+    margin-bottom: 20px;
+}
+}
+
+.social {
+    display: inline-flex;
+&-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+}
+
+}
+// 2 cách để lấy phần tử đầu tiên
+//Cách 1: 
+
+// .social-link:not(:first-child) {
+//     margin-right: 15px;
+// }
+//Cách 2
+.social-link + .social-link {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 50px 20px;
+    }
+}

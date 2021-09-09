@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color:#000;
+  text-align: center;
+  padding: 20px;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: 9999;
+  &-logo {
+    display: block;
+    margin-right: 350px;
+    font-size: 40px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  
+  &-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &-menu-item:not(:first-child) {
+    margin-left: 75px;
+  }
+
+  &-auth {
+    margin-left: auto;
+    .btn {
+      color: #fff;
+    }
+  }
+
+  &-menu-link {
+    color: #fff;
+    transition: color .2s ease-in-out ;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
