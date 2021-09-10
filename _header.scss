@@ -4,9 +4,10 @@
   position: fixed;
   background-color:#000;
   text-align: center;
-  padding: 20px;
+  top: 0;
   right: 0;
   left: 0;
+  padding: 15px;
   max-width: 100%;
   z-index: 9999;
   &-logo {
@@ -41,4 +42,6 @@
       color: $primary-color;
     }
   }
+
+
 }

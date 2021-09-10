@@ -114,9 +114,10 @@ body {
   position: fixed;
   background-color: #000;
   text-align: center;
-  padding: 20px;
+  top: 0;
   right: 0;
   left: 0;
+  padding: 15px;
   max-width: 100%;
   z-index: 9999;
 }
@@ -351,7 +352,7 @@ body {
 }
 
 .services {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 .services-list {
   display: flex;
@@ -408,7 +409,7 @@ body {
 .contact {
   display: flex;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 .contact-info {
   width: 60%;
@@ -445,6 +446,9 @@ body {
 .contact-form-info--three {
   display: flex;
   justify-content: space-between;
+}
+.contact-form-info--three .form-input {
+  width: calc(100%/3 - 5px) !important;
 }
 .contact-form-info .form-input {
   color: #272e35;
@@ -587,6 +591,9 @@ body {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
+}
+.footer-link i {
+  margin-right: 8px;
 }
 .footer-link-item {
   margin-bottom: 20px;
