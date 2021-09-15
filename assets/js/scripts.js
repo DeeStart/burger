@@ -21,12 +21,12 @@ const headerMenu = () => {
     mobileMenu.classList.toggle("toggler");
     
   });
-  document.addEventListener("click", function (e) {
-    if (!header.contains(e.target) && !e.target.matches(".mobile-menu")) {
-      header.classList.remove("is-active");
-      mobileMenu.classList.remove("toggler");
-    }
-  });
+  // document.addEventListener("click", function (e) {
+  //   if (!header.contains(e.target) && !e.target.matches(".mobile-menu")) {
+  //     header.classList.remove("is-active");
+  //     mobileMenu.classList.remove("toggler");
+  //   }
+  // });
   //Tắt Mobile menu
 };
 

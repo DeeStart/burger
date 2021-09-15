@@ -700,5 +700,11 @@ body {
     grid-gap: 50px 20px;
   }
 }
+@media screen and (max-width: 374px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
