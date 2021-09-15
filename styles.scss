@@ -57,6 +57,11 @@ $pink-color:#FF858D;
     max-width: 1440px;
     margin: 0 auto;
   }
+  .container{
+    max-width: 1210px;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
 
   .text {
     font-weight: 300;
@@ -66,7 +71,7 @@ $pink-color:#FF858D;
   
   .container{
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 0 2rem;
     margin: 0 auto;
   }
 
@@ -119,6 +124,20 @@ $pink-color:#FF858D;
   a {
     color: $gray-dark;
   }
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+  div {
+    width: 30px;
+    height: 4px;
+    background-color:rgb(179,179,173);
+    margin: 5px;
+    transition: all 0.3s ease;
+   
+  }
+  
 }
   @import "header";
   @import "banner";
